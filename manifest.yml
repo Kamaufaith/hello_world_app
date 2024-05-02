@@ -1,0 +1,16 @@
+modules:
+  bitbucket:repoCodeOverviewCard:
+    - key: hello-world-app-hello-world-repository-code-overview-card
+      resource: main
+      resolver:
+        function: resolver
+      render: native
+      title: hello_world_app
+  function:
+    - key: resolver
+      handler: index.handler
+resources:
+  - key: main
+    path: src/frontend/index.jsx
+app:
+  id: ari:cloud:ecosystem::app/4d42aa54-f83d-4d6b-b7e3-073dccc9be44
